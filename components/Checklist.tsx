@@ -101,10 +101,13 @@ export default function Checklist() {
               href={supportLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-accent-400 px-5 py-2.5 text-sm font-semibold text-unicive-900 transition-colors hover:bg-accent-300 focus:outline-none focus:ring-2 focus:ring-accent-300 focus:ring-offset-2 focus:ring-offset-unicive-800"
+              className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-gradient-to-br from-accent-300 to-accent-500 px-5 py-2.5 text-sm font-semibold text-unicive-900 shadow-md shadow-black/20 ring-1 ring-accent-300/40 transition-all duration-200 hover:from-accent-200 hover:to-accent-400 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent-300 focus:ring-offset-2 focus:ring-offset-unicive-800"
             >
               Falar com o suporte
-              <ArrowUpRight className="h-4 w-4" aria-hidden />
+              <ArrowUpRight
+                className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                aria-hidden
+              />
             </a>
           </div>
         </div>
