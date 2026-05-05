@@ -1,11 +1,9 @@
-import { Sparkles } from "lucide-react";
-
 export default function Hero() {
   return (
     <section className="mx-auto w-full max-w-5xl px-4 pb-6 pt-10 sm:px-6 sm:pb-10 sm:pt-16">
       <div className="flex flex-col items-start gap-5">
         <span className="inline-flex items-center gap-2 rounded-full border border-unicive-200 bg-white px-3 py-1 text-xs font-medium text-unicive-700 shadow-sm">
-          <Sparkles className="h-3.5 w-3.5" aria-hidden />
+          <span aria-hidden>🎓</span>
           Unicive Polo Caruaru · Jornada do Aluno
         </span>
 

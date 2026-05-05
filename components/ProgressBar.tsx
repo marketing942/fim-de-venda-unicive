@@ -23,7 +23,7 @@ export default function ProgressBar({
           <div className="flex items-center gap-2">
             <CheckCircle2
               className={`h-5 w-5 ${
-                allDone ? "text-emerald-600" : "text-unicive-600"
+                allDone ? "text-unicive-600" : "text-unicive-700"
               }`}
               aria-hidden
             />
@@ -42,7 +42,7 @@ export default function ProgressBar({
             className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-600 transition-colors hover:border-slate-300 hover:text-slate-900 disabled:cursor-not-allowed disabled:opacity-50"
           >
             <RotateCcw className="h-3.5 w-3.5" aria-hidden />
-            Refazer checklist
+            Reiniciar lista de tarefas
           </button>
         </div>
 
@@ -54,17 +54,13 @@ export default function ProgressBar({
           aria-valuenow={completed}
         >
           <div
-            className={`h-full rounded-full transition-[width] duration-500 ease-out ${
-              allDone
-                ? "bg-emerald-500"
-                : "bg-gradient-to-r from-unicive-500 to-unicive-700"
-            }`}
+            className="h-full rounded-full bg-gradient-to-r from-unicive-500 via-unicive-600 to-unicive-700 transition-[width] duration-500 ease-out"
             style={{ width: `${percent}%` }}
           />
         </div>
 
         {allDone && (
-          <p className="mt-4 rounded-xl bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-800">
+          <p className="mt-4 rounded-xl bg-unicive-50 px-4 py-3 text-sm font-medium text-unicive-800 ring-1 ring-unicive-100">
             Tudo certo! Agora é só aguardar seu acesso acadêmico e acompanhar as
             orientações do suporte.
           </p>

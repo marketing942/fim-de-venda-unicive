@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #f6f9ff;
+  --background: #f5faf6;
   --foreground: #0f172a;
 }
 
@@ -17,8 +17,8 @@ body {
 
 body {
   background-image:
-    radial-gradient(1200px 600px at 100% -10%, rgba(37, 99, 235, 0.08), transparent 60%),
-    radial-gradient(900px 500px at -10% 10%, rgba(29, 78, 216, 0.06), transparent 60%);
+    radial-gradient(1100px 520px at 100% -10%, rgba(13, 107, 80, 0.10), transparent 60%),
+    radial-gradient(900px 480px at -10% 10%, rgba(244, 164, 35, 0.08), transparent 60%);
   background-attachment: fixed;
 }
 
