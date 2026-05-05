@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MapPin, Mail, MessageCircle } from "lucide-react";
 
 export default function Footer() {
@@ -6,19 +7,14 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-5xl px-4 py-12 sm:px-6 sm:py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3">
-              <div
-                aria-hidden
-                className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/10"
-              >
-                <span className="text-lg font-bold text-accent-300">U</span>
-              </div>
-              <div className="leading-tight">
-                <p className="text-sm font-semibold text-white">Unicive</p>
-                <p className="text-xs text-unicive-200">Polo Caruaru · PE</p>
-              </div>
-            </div>
-            <p className="mt-4 max-w-md text-sm text-unicive-200">
+            <Image
+              src="/logo-polo-caruaru.png"
+              alt="Unicive — Polo Caruaru PE"
+              width={1080}
+              height={1350}
+              className="h-20 w-auto rounded-xl ring-1 ring-white/10"
+            />
+            <p className="mt-5 max-w-md text-sm text-unicive-200">
               Educação a distância de qualidade, com diploma reconhecido pelo
               MEC. Aqui no Polo Caruaru você conta com suporte humano em cada
               etapa da sua jornada acadêmica.
