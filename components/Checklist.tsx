@@ -1,10 +1,10 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { ArrowUpRight } from "lucide-react";
 import { steps, supportLink } from "@/lib/steps";
 import ProgressBar from "./ProgressBar";
 import StepCard from "./StepCard";
+import WhatsappIcon from "./icons/Whatsapp";
 
 const STORAGE_KEY = "unicive-proximos-passos:v2";
 
@@ -81,9 +81,9 @@ export default function Checklist() {
             <div className="flex items-start gap-4">
               <div
                 aria-hidden
-                className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white/15 text-2xl"
+                className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#25D366] text-white shadow-md shadow-black/20 ring-1 ring-white/20"
               >
-                🎧
+                <WhatsappIcon className="h-7 w-7" />
               </div>
               <div>
                 <h3 className="text-lg font-semibold sm:text-xl">
@@ -103,11 +103,8 @@ export default function Checklist() {
               rel="noopener noreferrer"
               className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-gradient-to-br from-accent-300 to-accent-500 px-5 py-2.5 text-sm font-semibold text-unicive-900 shadow-md shadow-black/20 ring-1 ring-accent-300/40 transition-all duration-200 hover:from-accent-200 hover:to-accent-400 hover:-translate-y-0.5 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-accent-300 focus:ring-offset-2 focus:ring-offset-unicive-800"
             >
+              <WhatsappIcon className="h-4 w-4 transition-transform group-hover:scale-110" />
               Falar com o suporte
-              <ArrowUpRight
-                className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                aria-hidden
-              />
             </a>
           </div>
         </div>

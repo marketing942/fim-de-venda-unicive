@@ -11,14 +11,14 @@ export default function Hero() {
           Unicive Polo Caruaru · Jornada do Aluno
         </span>
 
-        <h1 className="text-3xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-4xl md:text-[2.6rem]">
+        <h1 className="font-display text-[2rem] font-extrabold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl md:text-[3.25rem]">
           Parabéns pela sua matrícula!{" "}
           <span className="bg-gradient-to-r from-unicive-700 via-unicive-600 to-accent-500 bg-clip-text text-transparent">
             Agora siga seus próximos passos.
           </span>
         </h1>
 
-        <p className="max-w-2xl text-base text-slate-600 sm:text-lg">
+        <p className="max-w-2xl text-base text-slate-700 sm:text-lg">
           Preparamos uma jornada simples para você concluir tudo com segurança e
           começar seus estudos da forma correta.
         </p>
